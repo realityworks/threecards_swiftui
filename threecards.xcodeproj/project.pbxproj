@@ -29,6 +29,9 @@
 		1D37963A2918D2F50056E602 /* DependencyConformance.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D3796392918D2F50056E602 /* DependencyConformance.swift */; };
 		1D37963C2918D3640056E602 /* String+Error.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D37963B2918D3640056E602 /* String+Error.swift */; };
 		1D37963F2918D4790056E602 /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1D37963E2918D4790056E602 /* Launch Screen.storyboard */; };
+		1D3796442918D5FF0056E602 /* AlertOverlayManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D3796412918D5FF0056E602 /* AlertOverlayManager.swift */; };
+		1D3796452918D5FF0056E602 /* AlertOverlay.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D3796422918D5FF0056E602 /* AlertOverlay.swift */; };
+		1D3796462918D5FF0056E602 /* AlertState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D3796432918D5FF0056E602 /* AlertState.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -74,6 +77,9 @@
 		1D3796392918D2F50056E602 /* DependencyConformance.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DependencyConformance.swift; sourceTree = "<group>"; };
 		1D37963B2918D3640056E602 /* String+Error.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Error.swift"; sourceTree = "<group>"; };
 		1D37963E2918D4790056E602 /* Launch Screen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = "Launch Screen.storyboard"; sourceTree = "<group>"; };
+		1D3796412918D5FF0056E602 /* AlertOverlayManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlertOverlayManager.swift; sourceTree = "<group>"; };
+		1D3796422918D5FF0056E602 /* AlertOverlay.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlertOverlay.swift; sourceTree = "<group>"; };
+		1D3796432918D5FF0056E602 /* AlertState.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlertState.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -200,6 +206,7 @@
 		1D3796192918C8050056E602 /* SharedComponents */ = {
 			isa = PBXGroup;
 			children = (
+				1D3796402918D5FF0056E602 /* Alerts */,
 			);
 			path = SharedComponents;
 			sourceTree = "<group>";
@@ -258,6 +265,16 @@
 				1D37963E2918D4790056E602 /* Launch Screen.storyboard */,
 			);
 			path = Assets;
+			sourceTree = "<group>";
+		};
+		1D3796402918D5FF0056E602 /* Alerts */ = {
+			isa = PBXGroup;
+			children = (
+				1D3796412918D5FF0056E602 /* AlertOverlayManager.swift */,
+				1D3796422918D5FF0056E602 /* AlertOverlay.swift */,
+				1D3796432918D5FF0056E602 /* AlertState.swift */,
+			);
+			path = Alerts;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -391,14 +408,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1D3796442918D5FF0056E602 /* AlertOverlayManager.swift in Sources */,
 				1D3796272918CC2A0056E602 /* UserAccountUseCase.swift in Sources */,
 				1D3796252918CC210056E602 /* UseCaseContainer.swift in Sources */,
+				1D3796452918D5FF0056E602 /* AlertOverlay.swift in Sources */,
 				1D37963A2918D2F50056E602 /* DependencyConformance.swift in Sources */,
 				1D3796222918CC040056E602 /* UseCase.swift in Sources */,
 				1D3796332918CD980056E602 /* UseCaseState.swift in Sources */,
 				1D3796232918CC040056E602 /* UseCases.swift in Sources */,
 				1D37962C2918CD120056E602 /* AppStateController.swift in Sources */,
 				1D3795EE2918C6F40056E602 /* MainView.swift in Sources */,
+				1D3796462918D5FF0056E602 /* AlertState.swift in Sources */,
 				1D3796372918D2980056E602 /* MainViewModel.swift in Sources */,
 				1D37963C2918D3640056E602 /* String+Error.swift in Sources */,
 				1D3796352918CE340056E602 /* CardView.swift in Sources */,
