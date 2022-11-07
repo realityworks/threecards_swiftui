@@ -1,0 +1,588 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1D3795EC2918C6F40056E602 /* threecardsApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D3795EB2918C6F40056E602 /* threecardsApp.swift */; };
+		1D3795EE2918C6F40056E602 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D3795ED2918C6F40056E602 /* ContentView.swift */; };
+		1D3795F02918C6F50056E602 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1D3795EF2918C6F50056E602 /* Assets.xcassets */; };
+		1D3795F32918C6F50056E602 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1D3795F22918C6F50056E602 /* Preview Assets.xcassets */; };
+		1D3795FD2918C6F50056E602 /* threecardsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D3795FC2918C6F50056E602 /* threecardsTests.swift */; };
+		1D3796072918C6F50056E602 /* threecardsUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D3796062918C6F50056E602 /* threecardsUITests.swift */; };
+		1D3796092918C6F50056E602 /* threecardsUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D3796082918C6F50056E602 /* threecardsUITestsLaunchTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		1D3795F92918C6F50056E602 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1D3795E02918C6F40056E602 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1D3795E72918C6F40056E602;
+			remoteInfo = threecards;
+		};
+		1D3796032918C6F50056E602 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1D3795E02918C6F40056E602 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1D3795E72918C6F40056E602;
+			remoteInfo = threecards;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		1D3795E82918C6F40056E602 /* threecards.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = threecards.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		1D3795EB2918C6F40056E602 /* threecardsApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = threecardsApp.swift; sourceTree = "<group>"; };
+		1D3795ED2918C6F40056E602 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		1D3795EF2918C6F50056E602 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		1D3795F22918C6F50056E602 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		1D3795F82918C6F50056E602 /* threecardsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = threecardsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		1D3795FC2918C6F50056E602 /* threecardsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = threecardsTests.swift; sourceTree = "<group>"; };
+		1D3796022918C6F50056E602 /* threecardsUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = threecardsUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		1D3796062918C6F50056E602 /* threecardsUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = threecardsUITests.swift; sourceTree = "<group>"; };
+		1D3796082918C6F50056E602 /* threecardsUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = threecardsUITestsLaunchTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		1D3795E52918C6F40056E602 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1D3795F52918C6F50056E602 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1D3795FF2918C6F50056E602 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1D3795DF2918C6F40056E602 = {
+			isa = PBXGroup;
+			children = (
+				1D3795EA2918C6F40056E602 /* threecards */,
+				1D3795FB2918C6F50056E602 /* threecardsTests */,
+				1D3796052918C6F50056E602 /* threecardsUITests */,
+				1D3795E92918C6F40056E602 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		1D3795E92918C6F40056E602 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				1D3795E82918C6F40056E602 /* threecards.app */,
+				1D3795F82918C6F50056E602 /* threecardsTests.xctest */,
+				1D3796022918C6F50056E602 /* threecardsUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		1D3795EA2918C6F40056E602 /* threecards */ = {
+			isa = PBXGroup;
+			children = (
+				1D3795EB2918C6F40056E602 /* threecardsApp.swift */,
+				1D3795ED2918C6F40056E602 /* ContentView.swift */,
+				1D3795EF2918C6F50056E602 /* Assets.xcassets */,
+				1D3795F12918C6F50056E602 /* Preview Content */,
+			);
+			path = threecards;
+			sourceTree = "<group>";
+		};
+		1D3795F12918C6F50056E602 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				1D3795F22918C6F50056E602 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		1D3795FB2918C6F50056E602 /* threecardsTests */ = {
+			isa = PBXGroup;
+			children = (
+				1D3795FC2918C6F50056E602 /* threecardsTests.swift */,
+			);
+			path = threecardsTests;
+			sourceTree = "<group>";
+		};
+		1D3796052918C6F50056E602 /* threecardsUITests */ = {
+			isa = PBXGroup;
+			children = (
+				1D3796062918C6F50056E602 /* threecardsUITests.swift */,
+				1D3796082918C6F50056E602 /* threecardsUITestsLaunchTests.swift */,
+			);
+			path = threecardsUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		1D3795E72918C6F40056E602 /* threecards */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1D37960C2918C6F50056E602 /* Build configuration list for PBXNativeTarget "threecards" */;
+			buildPhases = (
+				1D3795E42918C6F40056E602 /* Sources */,
+				1D3795E52918C6F40056E602 /* Frameworks */,
+				1D3795E62918C6F40056E602 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = threecards;
+			productName = threecards;
+			productReference = 1D3795E82918C6F40056E602 /* threecards.app */;
+			productType = "com.apple.product-type.application";
+		};
+		1D3795F72918C6F50056E602 /* threecardsTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1D37960F2918C6F50056E602 /* Build configuration list for PBXNativeTarget "threecardsTests" */;
+			buildPhases = (
+				1D3795F42918C6F50056E602 /* Sources */,
+				1D3795F52918C6F50056E602 /* Frameworks */,
+				1D3795F62918C6F50056E602 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				1D3795FA2918C6F50056E602 /* PBXTargetDependency */,
+			);
+			name = threecardsTests;
+			productName = threecardsTests;
+			productReference = 1D3795F82918C6F50056E602 /* threecardsTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		1D3796012918C6F50056E602 /* threecardsUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1D3796122918C6F50056E602 /* Build configuration list for PBXNativeTarget "threecardsUITests" */;
+			buildPhases = (
+				1D3795FE2918C6F50056E602 /* Sources */,
+				1D3795FF2918C6F50056E602 /* Frameworks */,
+				1D3796002918C6F50056E602 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				1D3796042918C6F50056E602 /* PBXTargetDependency */,
+			);
+			name = threecardsUITests;
+			productName = threecardsUITests;
+			productReference = 1D3796022918C6F50056E602 /* threecardsUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		1D3795E02918C6F40056E602 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1400;
+				LastUpgradeCheck = 1400;
+				TargetAttributes = {
+					1D3795E72918C6F40056E602 = {
+						CreatedOnToolsVersion = 14.0;
+					};
+					1D3795F72918C6F50056E602 = {
+						CreatedOnToolsVersion = 14.0;
+						TestTargetID = 1D3795E72918C6F40056E602;
+					};
+					1D3796012918C6F50056E602 = {
+						CreatedOnToolsVersion = 14.0;
+						TestTargetID = 1D3795E72918C6F40056E602;
+					};
+				};
+			};
+			buildConfigurationList = 1D3795E32918C6F40056E602 /* Build configuration list for PBXProject "threecards" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 1D3795DF2918C6F40056E602;
+			productRefGroup = 1D3795E92918C6F40056E602 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				1D3795E72918C6F40056E602 /* threecards */,
+				1D3795F72918C6F50056E602 /* threecardsTests */,
+				1D3796012918C6F50056E602 /* threecardsUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		1D3795E62918C6F40056E602 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1D3795F32918C6F50056E602 /* Preview Assets.xcassets in Resources */,
+				1D3795F02918C6F50056E602 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1D3795F62918C6F50056E602 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1D3796002918C6F50056E602 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		1D3795E42918C6F40056E602 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1D3795EE2918C6F40056E602 /* ContentView.swift in Sources */,
+				1D3795EC2918C6F40056E602 /* threecardsApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1D3795F42918C6F50056E602 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1D3795FD2918C6F50056E602 /* threecardsTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1D3795FE2918C6F50056E602 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1D3796072918C6F50056E602 /* threecardsUITests.swift in Sources */,
+				1D3796092918C6F50056E602 /* threecardsUITestsLaunchTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		1D3795FA2918C6F50056E602 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 1D3795E72918C6F40056E602 /* threecards */;
+			targetProxy = 1D3795F92918C6F50056E602 /* PBXContainerItemProxy */;
+		};
+		1D3796042918C6F50056E602 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 1D3795E72918C6F40056E602 /* threecards */;
+			targetProxy = 1D3796032918C6F50056E602 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		1D37960A2918C6F50056E602 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		1D37960B2918C6F50056E602 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		1D37960D2918C6F50056E602 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"threecards/Preview Content\"";
+				DEVELOPMENT_TEAM = U9E7JWZWR9;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "Peter-suwara.threecards";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		1D37960E2918C6F50056E602 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"threecards/Preview Content\"";
+				DEVELOPMENT_TEAM = U9E7JWZWR9;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "Peter-suwara.threecards";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		1D3796102918C6F50056E602 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = U9E7JWZWR9;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "Peter-suwara.threecardsTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/threecards.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/threecards";
+			};
+			name = Debug;
+		};
+		1D3796112918C6F50056E602 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = U9E7JWZWR9;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "Peter-suwara.threecardsTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/threecards.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/threecards";
+			};
+			name = Release;
+		};
+		1D3796132918C6F50056E602 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = U9E7JWZWR9;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "Peter-suwara.threecardsUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = threecards;
+			};
+			name = Debug;
+		};
+		1D3796142918C6F50056E602 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = U9E7JWZWR9;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "Peter-suwara.threecardsUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = threecards;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1D3795E32918C6F40056E602 /* Build configuration list for PBXProject "threecards" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1D37960A2918C6F50056E602 /* Debug */,
+				1D37960B2918C6F50056E602 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1D37960C2918C6F50056E602 /* Build configuration list for PBXNativeTarget "threecards" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1D37960D2918C6F50056E602 /* Debug */,
+				1D37960E2918C6F50056E602 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1D37960F2918C6F50056E602 /* Build configuration list for PBXNativeTarget "threecardsTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1D3796102918C6F50056E602 /* Debug */,
+				1D3796112918C6F50056E602 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1D3796122918C6F50056E602 /* Build configuration list for PBXNativeTarget "threecardsUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1D3796132918C6F50056E602 /* Debug */,
+				1D3796142918C6F50056E602 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 1D3795E02918C6F40056E602 /* Project object */;
+}
