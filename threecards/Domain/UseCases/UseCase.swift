@@ -11,9 +11,9 @@ import Foundation
 // A use case requires it to have access to a global state controller...
 protocol UseCase: AnyObject, CustomStringConvertible, DependencyEnvironment {
     associatedtype State: UseCaseState
-    typealias StateAccess = WritableKeyPath<GlobalState, State>
+    typealias StateAccess = WritableKeyPath<AppState, State>
     
-    var stateController: GlobalStateController { get }
+    var stateController: AppStateController { get }
     var lens: StateAccess { get }
     var state: State { get set }
 }
@@ -25,41 +25,13 @@ extension UseCase {
 }
 
 extension UseCase {
-    var hasCurrentUser: Bool {
-        globalState.userAccount.currentUserId != nil
-    }
-
-    var currentUserId: UserId {
-        get throws {
-            guard let userId = globalState.userAccount.currentUserId else {
-                throw "Current user does not exist!"
-            }
-
-            return userId
-        }
-    }
-
-    var hasCurrentDevice: Bool {
-        globalState.intelliIQ.currentlySelectedDevice?.intelliIQ.id != nil
-    }
-
-    var currentDeviceId: IntelliIQDevice.ID {
-        get throws {
-            guard let deviceId = globalState.intelliIQ.currentlySelectedDevice?.intelliIQ.id else {
-                throw "Current Device does not exist!"
-            }
-            
-            return deviceId
-        }
-    }
-
-    var stateController: GlobalStateController {
+    var stateController: AppStateController {
         get {
-            GlobalStateController.shared
+            AppStateController.shared
         }
     }
 
-    var globalState: GlobalState {
+    var appState: AppState {
         set {
             stateController.state = newValue
         }
@@ -71,15 +43,15 @@ extension UseCase {
 
     var state: State {
         get {
-            globalState[keyPath: lens]
+            appState[keyPath: lens]
         } set {
-            globalState[keyPath: lens] = newValue
+            appState[keyPath: lens] = newValue
         }
     }
 
     @discardableResult
     func internalError(with error: Error) -> Bool {
-        Logger.error(topic: .appState, message: "Internal Error: \(error.localizedDescription)")
+        print("Internal Error: \(error.localizedDescription)")
         
         guard let domainError = error as? DomainError else {
             stateController.errorSubject.send(.unknown(error))
