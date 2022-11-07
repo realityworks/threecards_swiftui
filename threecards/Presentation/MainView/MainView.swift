@@ -1,5 +1,5 @@
 //
-//  ContentView.swift
+//  MainView.swift
 //  threecards
 //
 //  Created by Piotr Suwara on 7/11/2022.
@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct ContentView: View {
+struct MainView: View {
     var body: some View {
         VStack {
             Image(systemName: "globe")

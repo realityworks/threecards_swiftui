@@ -8,12 +8,24 @@
 
 /* Begin PBXBuildFile section */
 		1D3795EC2918C6F40056E602 /* threecardsApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D3795EB2918C6F40056E602 /* threecardsApp.swift */; };
-		1D3795EE2918C6F40056E602 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D3795ED2918C6F40056E602 /* ContentView.swift */; };
+		1D3795EE2918C6F40056E602 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D3795ED2918C6F40056E602 /* MainView.swift */; };
 		1D3795F02918C6F50056E602 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1D3795EF2918C6F50056E602 /* Assets.xcassets */; };
 		1D3795F32918C6F50056E602 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1D3795F22918C6F50056E602 /* Preview Assets.xcassets */; };
 		1D3795FD2918C6F50056E602 /* threecardsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D3795FC2918C6F50056E602 /* threecardsTests.swift */; };
 		1D3796072918C6F50056E602 /* threecardsUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D3796062918C6F50056E602 /* threecardsUITests.swift */; };
 		1D3796092918C6F50056E602 /* threecardsUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D3796082918C6F50056E602 /* threecardsUITestsLaunchTests.swift */; };
+		1D37961D2918C97B0056E602 /* Domain.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D37961B2918C97B0056E602 /* Domain.swift */; };
+		1D37961E2918C97B0056E602 /* DomainError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D37961C2918C97B0056E602 /* DomainError.swift */; };
+		1D3796222918CC040056E602 /* UseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D3796202918CC040056E602 /* UseCase.swift */; };
+		1D3796232918CC040056E602 /* UseCases.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D3796212918CC040056E602 /* UseCases.swift */; };
+		1D3796252918CC210056E602 /* UseCaseContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D3796242918CC210056E602 /* UseCaseContainer.swift */; };
+		1D3796272918CC2A0056E602 /* UserAccountUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D3796262918CC2A0056E602 /* UserAccountUseCase.swift */; };
+		1D37962C2918CD120056E602 /* AppStateController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D37962A2918CD120056E602 /* AppStateController.swift */; };
+		1D37962D2918CD120056E602 /* AppState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D37962B2918CD120056E602 /* AppState.swift */; };
+		1D3796312918CD770056E602 /* UserAccountState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D3796302918CD770056E602 /* UserAccountState.swift */; };
+		1D3796332918CD980056E602 /* UseCaseState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D3796322918CD980056E602 /* UseCaseState.swift */; };
+		1D3796352918CE340056E602 /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D3796342918CE340056E602 /* CardView.swift */; };
+		1D3796372918D2980056E602 /* MainViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D3796362918D2980056E602 /* MainViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,7 +48,7 @@
 /* Begin PBXFileReference section */
 		1D3795E82918C6F40056E602 /* threecards.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = threecards.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1D3795EB2918C6F40056E602 /* threecardsApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = threecardsApp.swift; sourceTree = "<group>"; };
-		1D3795ED2918C6F40056E602 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		1D3795ED2918C6F40056E602 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
 		1D3795EF2918C6F50056E602 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1D3795F22918C6F50056E602 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		1D3795F82918C6F50056E602 /* threecardsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = threecardsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -44,6 +56,18 @@
 		1D3796022918C6F50056E602 /* threecardsUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = threecardsUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		1D3796062918C6F50056E602 /* threecardsUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = threecardsUITests.swift; sourceTree = "<group>"; };
 		1D3796082918C6F50056E602 /* threecardsUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = threecardsUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		1D37961B2918C97B0056E602 /* Domain.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Domain.swift; sourceTree = "<group>"; };
+		1D37961C2918C97B0056E602 /* DomainError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DomainError.swift; sourceTree = "<group>"; };
+		1D3796202918CC040056E602 /* UseCase.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UseCase.swift; sourceTree = "<group>"; };
+		1D3796212918CC040056E602 /* UseCases.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UseCases.swift; sourceTree = "<group>"; };
+		1D3796242918CC210056E602 /* UseCaseContainer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UseCaseContainer.swift; sourceTree = "<group>"; };
+		1D3796262918CC2A0056E602 /* UserAccountUseCase.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserAccountUseCase.swift; sourceTree = "<group>"; };
+		1D37962A2918CD120056E602 /* AppStateController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppStateController.swift; sourceTree = "<group>"; };
+		1D37962B2918CD120056E602 /* AppState.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppState.swift; sourceTree = "<group>"; };
+		1D3796302918CD770056E602 /* UserAccountState.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserAccountState.swift; sourceTree = "<group>"; };
+		1D3796322918CD980056E602 /* UseCaseState.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UseCaseState.swift; sourceTree = "<group>"; };
+		1D3796342918CE340056E602 /* CardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
+		1D3796362918D2980056E602 /* MainViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,8 +118,10 @@
 		1D3795EA2918C6F40056E602 /* threecards */ = {
 			isa = PBXGroup;
 			children = (
-				1D3795EB2918C6F40056E602 /* threecardsApp.swift */,
-				1D3795ED2918C6F40056E602 /* ContentView.swift */,
+				1D3796382918D2C50056E602 /* Utilities */,
+				1D3796172918C7ED0056E602 /* Domain */,
+				1D3796162918C7DB0056E602 /* Presentation */,
+				1D3796152918C7D20056E602 /* App */,
 				1D3795EF2918C6F50056E602 /* Assets.xcassets */,
 				1D3795F12918C6F50056E602 /* Preview Content */,
 			);
@@ -125,6 +151,96 @@
 				1D3796082918C6F50056E602 /* threecardsUITestsLaunchTests.swift */,
 			);
 			path = threecardsUITests;
+			sourceTree = "<group>";
+		};
+		1D3796152918C7D20056E602 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				1D3795EB2918C6F40056E602 /* threecardsApp.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		1D3796162918C7DB0056E602 /* Presentation */ = {
+			isa = PBXGroup;
+			children = (
+				1D3796192918C8050056E602 /* SharedComponents */,
+				1D3796182918C7FE0056E602 /* MainView */,
+			);
+			path = Presentation;
+			sourceTree = "<group>";
+		};
+		1D3796172918C7ED0056E602 /* Domain */ = {
+			isa = PBXGroup;
+			children = (
+				1D3796282918CCD00056E602 /* AppState */,
+				1D37961F2918C9AE0056E602 /* UseCases */,
+				1D37961B2918C97B0056E602 /* Domain.swift */,
+				1D37961C2918C97B0056E602 /* DomainError.swift */,
+			);
+			path = Domain;
+			sourceTree = "<group>";
+		};
+		1D3796182918C7FE0056E602 /* MainView */ = {
+			isa = PBXGroup;
+			children = (
+				1D3795ED2918C6F40056E602 /* MainView.swift */,
+				1D3796362918D2980056E602 /* MainViewModel.swift */,
+				1D37961A2918C80E0056E602 /* Components */,
+			);
+			path = MainView;
+			sourceTree = "<group>";
+		};
+		1D3796192918C8050056E602 /* SharedComponents */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = SharedComponents;
+			sourceTree = "<group>";
+		};
+		1D37961A2918C80E0056E602 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				1D3796342918CE340056E602 /* CardView.swift */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		1D37961F2918C9AE0056E602 /* UseCases */ = {
+			isa = PBXGroup;
+			children = (
+				1D3796202918CC040056E602 /* UseCase.swift */,
+				1D3796212918CC040056E602 /* UseCases.swift */,
+				1D3796242918CC210056E602 /* UseCaseContainer.swift */,
+				1D3796262918CC2A0056E602 /* UserAccountUseCase.swift */,
+			);
+			path = UseCases;
+			sourceTree = "<group>";
+		};
+		1D3796282918CCD00056E602 /* AppState */ = {
+			isa = PBXGroup;
+			children = (
+				1D37962B2918CD120056E602 /* AppState.swift */,
+				1D37962A2918CD120056E602 /* AppStateController.swift */,
+				1D3796302918CD770056E602 /* UserAccountState.swift */,
+				1D3796322918CD980056E602 /* UseCaseState.swift */,
+				1D3796292918CCDA0056E602 /* Model */,
+			);
+			path = AppState;
+			sourceTree = "<group>";
+		};
+		1D3796292918CCDA0056E602 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		1D3796382918D2C50056E602 /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Utilities;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -257,8 +373,20 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1D3795EE2918C6F40056E602 /* ContentView.swift in Sources */,
+				1D3796272918CC2A0056E602 /* UserAccountUseCase.swift in Sources */,
+				1D3796252918CC210056E602 /* UseCaseContainer.swift in Sources */,
+				1D3796222918CC040056E602 /* UseCase.swift in Sources */,
+				1D3796332918CD980056E602 /* UseCaseState.swift in Sources */,
+				1D3796232918CC040056E602 /* UseCases.swift in Sources */,
+				1D37962C2918CD120056E602 /* AppStateController.swift in Sources */,
+				1D3795EE2918C6F40056E602 /* MainView.swift in Sources */,
+				1D3796372918D2980056E602 /* MainViewModel.swift in Sources */,
+				1D3796352918CE340056E602 /* CardView.swift in Sources */,
+				1D37962D2918CD120056E602 /* AppState.swift in Sources */,
+				1D3796312918CD770056E602 /* UserAccountState.swift in Sources */,
 				1D3795EC2918C6F40056E602 /* threecardsApp.swift in Sources */,
+				1D37961E2918C97B0056E602 /* DomainError.swift in Sources */,
+				1D37961D2918C97B0056E602 /* Domain.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
