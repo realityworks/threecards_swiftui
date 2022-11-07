@@ -12,6 +12,10 @@ class UserAccountUseCase: UseCase {
     var lens: StateAccess {
         \.userAccount
     }
+
+    required init(dependencies: Dependencies = .mock) {
+
+    }
 }
 
 

@@ -26,6 +26,8 @@
 		1D3796332918CD980056E602 /* UseCaseState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D3796322918CD980056E602 /* UseCaseState.swift */; };
 		1D3796352918CE340056E602 /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D3796342918CE340056E602 /* CardView.swift */; };
 		1D3796372918D2980056E602 /* MainViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D3796362918D2980056E602 /* MainViewModel.swift */; };
+		1D37963A2918D2F50056E602 /* DependencyConformance.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D3796392918D2F50056E602 /* DependencyConformance.swift */; };
+		1D37963C2918D3640056E602 /* String+Error.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D37963B2918D3640056E602 /* String+Error.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -68,6 +70,8 @@
 		1D3796322918CD980056E602 /* UseCaseState.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UseCaseState.swift; sourceTree = "<group>"; };
 		1D3796342918CE340056E602 /* CardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
 		1D3796362918D2980056E602 /* MainViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewModel.swift; sourceTree = "<group>"; };
+		1D3796392918D2F50056E602 /* DependencyConformance.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DependencyConformance.swift; sourceTree = "<group>"; };
+		1D37963B2918D3640056E602 /* String+Error.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Error.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -239,6 +243,8 @@
 		1D3796382918D2C50056E602 /* Utilities */ = {
 			isa = PBXGroup;
 			children = (
+				1D3796392918D2F50056E602 /* DependencyConformance.swift */,
+				1D37963B2918D3640056E602 /* String+Error.swift */,
 			);
 			path = Utilities;
 			sourceTree = "<group>";
@@ -375,12 +381,14 @@
 			files = (
 				1D3796272918CC2A0056E602 /* UserAccountUseCase.swift in Sources */,
 				1D3796252918CC210056E602 /* UseCaseContainer.swift in Sources */,
+				1D37963A2918D2F50056E602 /* DependencyConformance.swift in Sources */,
 				1D3796222918CC040056E602 /* UseCase.swift in Sources */,
 				1D3796332918CD980056E602 /* UseCaseState.swift in Sources */,
 				1D3796232918CC040056E602 /* UseCases.swift in Sources */,
 				1D37962C2918CD120056E602 /* AppStateController.swift in Sources */,
 				1D3795EE2918C6F40056E602 /* MainView.swift in Sources */,
 				1D3796372918D2980056E602 /* MainViewModel.swift in Sources */,
+				1D37963C2918D3640056E602 /* String+Error.swift in Sources */,
 				1D3796352918CE340056E602 /* CardView.swift in Sources */,
 				1D37962D2918CD120056E602 /* AppState.swift in Sources */,
 				1D3796312918CD770056E602 /* UserAccountState.swift in Sources */,
