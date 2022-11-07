@@ -8,4 +8,5 @@
 import Foundation
 
 struct UserAccountState: UseCaseState {
+    var cards: [CardItem]
 }

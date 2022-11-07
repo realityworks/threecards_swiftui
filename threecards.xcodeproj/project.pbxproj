@@ -34,6 +34,15 @@
 		1D3796462918D5FF0056E602 /* AlertState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D3796432918D5FF0056E602 /* AlertState.swift */; };
 		1D3796482918D6CA0056E602 /* UserInterfaceStandards.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D3796472918D6CA0056E602 /* UserInterfaceStandards.swift */; };
 		1D37964B2918D6DA0056E602 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D37964A2918D6DA0056E602 /* Constants.swift */; };
+		1D37965129199EFD0056E602 /* CardItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D37965029199EFD0056E602 /* CardItem.swift */; };
+		1D3796552919A8110056E602 /* CardDefinable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D3796542919A8110056E602 /* CardDefinable.swift */; };
+		1D3796572919A8330056E602 /* Card1.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D3796562919A8330056E602 /* Card1.swift */; };
+		1D3796592919A83A0056E602 /* Card2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D3796582919A83A0056E602 /* Card2.swift */; };
+		1D37965B2919A8410056E602 /* Card3.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D37965A2919A8410056E602 /* Card3.swift */; };
+		1D37965D2919A88B0056E602 /* dateDisplayTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D37965C2919A88B0056E602 /* dateDisplayTests.swift */; };
+		1D37965F2919A9690056E602 /* colorStringTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D37965E2919A9690056E602 /* colorStringTests.swift */; };
+		1D3796612919A97A0056E602 /* String+Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D3796602919A97A0056E602 /* String+Color.swift */; };
+		1D3796632919A9EF0056E602 /* Date+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D3796622919A9EF0056E602 /* Date+Extensions.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -84,6 +93,15 @@
 		1D3796432918D5FF0056E602 /* AlertState.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlertState.swift; sourceTree = "<group>"; };
 		1D3796472918D6CA0056E602 /* UserInterfaceStandards.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserInterfaceStandards.swift; sourceTree = "<group>"; };
 		1D37964A2918D6DA0056E602 /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		1D37965029199EFD0056E602 /* CardItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardItem.swift; sourceTree = "<group>"; };
+		1D3796542919A8110056E602 /* CardDefinable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardDefinable.swift; sourceTree = "<group>"; };
+		1D3796562919A8330056E602 /* Card1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Card1.swift; sourceTree = "<group>"; };
+		1D3796582919A83A0056E602 /* Card2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Card2.swift; sourceTree = "<group>"; };
+		1D37965A2919A8410056E602 /* Card3.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Card3.swift; sourceTree = "<group>"; };
+		1D37965C2919A88B0056E602 /* dateDisplayTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = dateDisplayTests.swift; sourceTree = "<group>"; };
+		1D37965E2919A9690056E602 /* colorStringTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = colorStringTests.swift; sourceTree = "<group>"; };
+		1D3796602919A97A0056E602 /* String+Color.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Color.swift"; sourceTree = "<group>"; };
+		1D3796622919A9EF0056E602 /* Date+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Date+Extensions.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -155,6 +173,8 @@
 			isa = PBXGroup;
 			children = (
 				1D3795FC2918C6F50056E602 /* threecardsTests.swift */,
+				1D37965C2919A88B0056E602 /* dateDisplayTests.swift */,
+				1D37965E2919A9690056E602 /* colorStringTests.swift */,
 			);
 			path = threecardsTests;
 			sourceTree = "<group>";
@@ -250,6 +270,11 @@
 		1D3796292918CCDA0056E602 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				1D37965029199EFD0056E602 /* CardItem.swift */,
+				1D3796542919A8110056E602 /* CardDefinable.swift */,
+				1D3796562919A8330056E602 /* Card1.swift */,
+				1D3796582919A83A0056E602 /* Card2.swift */,
+				1D37965A2919A8410056E602 /* Card3.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -259,6 +284,8 @@
 			children = (
 				1D3796392918D2F50056E602 /* DependencyConformance.swift */,
 				1D37963B2918D3640056E602 /* String+Error.swift */,
+				1D3796602919A97A0056E602 /* String+Color.swift */,
+				1D3796622919A9EF0056E602 /* Date+Extensions.swift */,
 			);
 			path = Utilities;
 			sourceTree = "<group>";
@@ -427,20 +454,27 @@
 				1D3796252918CC210056E602 /* UseCaseContainer.swift in Sources */,
 				1D3796452918D5FF0056E602 /* AlertOverlay.swift in Sources */,
 				1D37963A2918D2F50056E602 /* DependencyConformance.swift in Sources */,
+				1D3796612919A97A0056E602 /* String+Color.swift in Sources */,
 				1D3796222918CC040056E602 /* UseCase.swift in Sources */,
 				1D3796332918CD980056E602 /* UseCaseState.swift in Sources */,
 				1D3796232918CC040056E602 /* UseCases.swift in Sources */,
 				1D37962C2918CD120056E602 /* AppStateController.swift in Sources */,
+				1D3796552919A8110056E602 /* CardDefinable.swift in Sources */,
 				1D3795EE2918C6F40056E602 /* MainView.swift in Sources */,
 				1D3796462918D5FF0056E602 /* AlertState.swift in Sources */,
 				1D37964B2918D6DA0056E602 /* Constants.swift in Sources */,
 				1D3796372918D2980056E602 /* MainViewModel.swift in Sources */,
 				1D37963C2918D3640056E602 /* String+Error.swift in Sources */,
+				1D37965B2919A8410056E602 /* Card3.swift in Sources */,
 				1D3796352918CE340056E602 /* CardView.swift in Sources */,
+				1D3796632919A9EF0056E602 /* Date+Extensions.swift in Sources */,
 				1D37962D2918CD120056E602 /* AppState.swift in Sources */,
+				1D3796572919A8330056E602 /* Card1.swift in Sources */,
+				1D37965129199EFD0056E602 /* CardItem.swift in Sources */,
 				1D3796482918D6CA0056E602 /* UserInterfaceStandards.swift in Sources */,
 				1D3796312918CD770056E602 /* UserAccountState.swift in Sources */,
 				1D3795EC2918C6F40056E602 /* threecardsApp.swift in Sources */,
+				1D3796592919A83A0056E602 /* Card2.swift in Sources */,
 				1D37961E2918C97B0056E602 /* DomainError.swift in Sources */,
 				1D37961D2918C97B0056E602 /* Domain.swift in Sources */,
 			);
@@ -450,6 +484,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1D37965D2919A88B0056E602 /* dateDisplayTests.swift in Sources */,
+				1D37965F2919A9690056E602 /* colorStringTests.swift in Sources */,
 				1D3795FD2918C6F50056E602 /* threecardsTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
