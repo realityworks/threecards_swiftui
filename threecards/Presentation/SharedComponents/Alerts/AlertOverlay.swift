@@ -7,7 +7,6 @@
 
 import SwiftUI
 import Combine
-import Asynchrone
 
 struct AlertOverlay<Content: View>: View {
     var content: Content
@@ -69,11 +68,8 @@ struct AlertOverlay_Previews: PreviewProvider {
             }
         }
         .task {
-            let firstState = AlertState(title: "First!")
+            let firstState = AlertState(title: "Alert!")
             publisher.send(firstState)
-            try? await Task.sleep(seconds: 2)
-            let delayedState = AlertState(title: "Delayed!")
-            publisher.send(delayedState)
         }
     }
 }

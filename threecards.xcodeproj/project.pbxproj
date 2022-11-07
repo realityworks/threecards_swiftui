@@ -32,6 +32,8 @@
 		1D3796442918D5FF0056E602 /* AlertOverlayManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D3796412918D5FF0056E602 /* AlertOverlayManager.swift */; };
 		1D3796452918D5FF0056E602 /* AlertOverlay.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D3796422918D5FF0056E602 /* AlertOverlay.swift */; };
 		1D3796462918D5FF0056E602 /* AlertState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D3796432918D5FF0056E602 /* AlertState.swift */; };
+		1D3796482918D6CA0056E602 /* UserInterfaceStandards.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D3796472918D6CA0056E602 /* UserInterfaceStandards.swift */; };
+		1D37964B2918D6DA0056E602 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D37964A2918D6DA0056E602 /* Constants.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -80,6 +82,8 @@
 		1D3796412918D5FF0056E602 /* AlertOverlayManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlertOverlayManager.swift; sourceTree = "<group>"; };
 		1D3796422918D5FF0056E602 /* AlertOverlay.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlertOverlay.swift; sourceTree = "<group>"; };
 		1D3796432918D5FF0056E602 /* AlertState.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlertState.swift; sourceTree = "<group>"; };
+		1D3796472918D6CA0056E602 /* UserInterfaceStandards.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserInterfaceStandards.swift; sourceTree = "<group>"; };
+		1D37964A2918D6DA0056E602 /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -176,6 +180,7 @@
 		1D3796162918C7DB0056E602 /* Presentation */ = {
 			isa = PBXGroup;
 			children = (
+				1D3796492918D6CE0056E602 /* Styling */,
 				1D3796192918C8050056E602 /* SharedComponents */,
 				1D3796182918C7FE0056E602 /* MainView */,
 			);
@@ -275,6 +280,15 @@
 				1D3796432918D5FF0056E602 /* AlertState.swift */,
 			);
 			path = Alerts;
+			sourceTree = "<group>";
+		};
+		1D3796492918D6CE0056E602 /* Styling */ = {
+			isa = PBXGroup;
+			children = (
+				1D3796472918D6CA0056E602 /* UserInterfaceStandards.swift */,
+				1D37964A2918D6DA0056E602 /* Constants.swift */,
+			);
+			path = Styling;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -419,10 +433,12 @@
 				1D37962C2918CD120056E602 /* AppStateController.swift in Sources */,
 				1D3795EE2918C6F40056E602 /* MainView.swift in Sources */,
 				1D3796462918D5FF0056E602 /* AlertState.swift in Sources */,
+				1D37964B2918D6DA0056E602 /* Constants.swift in Sources */,
 				1D3796372918D2980056E602 /* MainViewModel.swift in Sources */,
 				1D37963C2918D3640056E602 /* String+Error.swift in Sources */,
 				1D3796352918CE340056E602 /* CardView.swift in Sources */,
 				1D37962D2918CD120056E602 /* AppState.swift in Sources */,
+				1D3796482918D6CA0056E602 /* UserInterfaceStandards.swift in Sources */,
 				1D3796312918CD770056E602 /* UserAccountState.swift in Sources */,
 				1D3795EC2918C6F40056E602 /* threecardsApp.swift in Sources */,
 				1D37961E2918C97B0056E602 /* DomainError.swift in Sources */,
