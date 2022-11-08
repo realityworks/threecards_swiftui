@@ -10,18 +10,21 @@ import SwiftUI
 struct Card1View: View {
     var cardData: Card1Model
     var body: some View {
-        VStack(spacing: 20) {
-            CardViewHeader(
-                title: cardData.title,
-                color: cardData.color.swiftUIColor
-            )
-
-            Text(cardData.name)
-                .font(.headline)
-
-            Spacer()
-            QRCodeView(dataString: cardData.dataString)
-            Spacer()
+        ScrollView {
+            VStack(spacing: 20) {
+                CardViewHeader(
+                    title: cardData.title,
+                    color: cardData.color.swiftUIColor
+                )
+                .frame(minHeight: 150)
+                
+                Text(cardData.name)
+                    .font(.headline)
+                
+                Spacer()
+                QRCodeView(dataString: cardData.dataString)
+                Spacer()
+            }
         }
     }
 }

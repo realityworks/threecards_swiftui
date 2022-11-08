@@ -13,13 +13,26 @@ struct MainView: View {
     var body: some View {
         AlertOverlay(model.errorAlertManager) {
             VStack {
-                Button("RESET") {
-                    //model.reset()
+                HStack {
+                    Button("RESET") {
+                        //model.reset()
+                    }
+                    .frame(minWidth: 100)
+                    .padding()
+                    .foregroundColor(.appForegroundBright)
+                    .background(Color.appForegroundDark)
+                    .cornerRadius(20)
+
+                    Button("EDIT") {
+                        model.toggleEdit()
+                    }
+                    .frame(minWidth: 100)
+                    .padding()
+                    .foregroundColor(.appForegroundBright)
+                    .background(Color.appForegroundDark)
+                    .cornerRadius(20)
+
                 }
-                .padding()
-                .foregroundColor(.appForegroundBright)
-                .background(Color.appForegroundDark)
-                .cornerRadius(20)
 
                 List {
                     ForEach(model.cardData) { cardItem in
@@ -33,10 +46,14 @@ struct MainView: View {
                             }
                     }
                     .onDelete { indexSet in
-                        model.delete(at: indexSet)
+                        //model.delete(at: indexSet)
+                    }
+                    .onMove { source, destination in
+                        //model.move(from: source, to: destination)
                     }
                 }
                 .listStyle(.plain)
+                .environment(\.editMode, .constant(model.editEnabled ? .active : .inactive))
             }
             .padding(.top, 8)
         }

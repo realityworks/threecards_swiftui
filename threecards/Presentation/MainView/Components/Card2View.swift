@@ -10,22 +10,25 @@ import SwiftUI
 struct Card2View: View {
     var cardData: Card2Model
     var body: some View {
-        VStack(spacing: 20) {
-            CardViewHeader(
-                title: cardData.title,
-                color: cardData.color.swiftUIColor
-            )
+        ScrollView {
+            VStack(spacing: 20) {
+                CardViewHeader(
+                    title: cardData.title,
+                    color: cardData.color.swiftUIColor
+                )
+                .frame(minHeight: 150)
 
-            Text(cardData.name)
-                .font(.headline)
-            Text("Number:" + cardData.cardNumber)
-                .font(.subheadline)
-            Text("Expiry:" + cardData.expiryDate.formatted())
-                .font(.subheadline)
+                Text(cardData.name)
+                    .font(.headline)
+                Text("Number:" + cardData.cardNumber)
+                    .font(.subheadline)
+                Text("Expiry:" + cardData.expiryDate.formatted())
+                    .font(.subheadline)
 
-            Spacer()
-            QRCodeView(dataString: cardData.dataString)
-            Spacer()
+                Spacer()
+                QRCodeView(dataString: cardData.dataString)
+                Spacer()
+            }
         }
     }
 }

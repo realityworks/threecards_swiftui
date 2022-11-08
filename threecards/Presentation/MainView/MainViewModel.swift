@@ -10,6 +10,7 @@ import Foundation
 class MainViewModel: ObservableObject {
     @Published var cardData: [CardItem] = []
     @Published var selectedCard: CardItem?
+    @Published var editEnabled: Bool = false
 
     let errorAlertManager: AlertOverlayManager
     private let userAccountUseCase: UserAccountUseCase
@@ -39,8 +40,8 @@ class MainViewModel: ObservableObject {
         userAccountUseCase.select(card)
     }
 
-    func delete(at: IndexSet) {
-        
+    func toggleEdit() {
+        editEnabled.toggle()
     }
 }
 

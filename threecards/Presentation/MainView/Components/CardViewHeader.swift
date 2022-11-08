@@ -20,7 +20,7 @@ struct CardViewHeader: View {
                 .foregroundColor(.appForegroundBright)
                 .font(.title)
         }
-        .frame(maxHeight: 100)
+        //.frame(maxHeight: 100)
         .padding(.vertical, 24)
     }
 }
