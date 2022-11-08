@@ -12,6 +12,7 @@ struct threecardsApp: App {
     var body: some Scene {
         WindowGroup {
             MainView()
+                .background(Color.appBackground)
         }
     }
 }

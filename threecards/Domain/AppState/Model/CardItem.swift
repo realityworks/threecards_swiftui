@@ -13,7 +13,7 @@ struct CardItem: Identifiable {
         id
     }
 
-    var displayable: any CardDefinable
+    var cardDefinition: any CardDefinable
 }
 
 extension CardItem: Equatable {
@@ -25,6 +25,6 @@ extension CardItem: Equatable {
 extension CardItem: Hashable {
     func hash(into hasher: inout Hasher) {
         hasher.combine(id)
-        hasher.combine(displayable)
+        hasher.combine(cardDefinition)
     }
 }

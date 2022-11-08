@@ -7,9 +7,9 @@
 
 import Foundation
 
-struct Card3: CardDefinable {
+struct Card3: CardExpirable {
     var title: String
-    var color: String { "#FF00FF" }
+    var color: CardColor { .purple }
     var firstName: String
     var lastName: String
     var cardId: UUID

@@ -8,7 +8,18 @@
 import Foundation
 import CoreGraphics
 
+enum CardColor {
+    case green
+    case blue
+    case purple
+}
+
 protocol CardDefinable: Equatable, Hashable {
     var title: String { get }
-    var color: String { get }
+    var color: CardColor { get }
+    var expired: Bool { get }
+}
+
+extension CardDefinable {
+    var expired: Bool { false }
 }

@@ -10,6 +10,6 @@ import CoreGraphics
 
 struct Card1: CardDefinable {
     var title: String
-    var color: String { "#0000FF" }
+    var color: CardColor { .blue }
     var name: String
 }

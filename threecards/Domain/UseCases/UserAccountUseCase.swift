@@ -14,7 +14,19 @@ class UserAccountUseCase: UseCase {
     }
 
     required init(dependencies: Dependencies = .mock) {
+        
+    }
 
+    func move(card: CardItem, toPositionInList position: Int) {
+
+    }
+
+    func remove(card: CardItem) {
+
+    }
+
+    func resetList() {
+        
     }
 }
 
@@ -22,8 +34,8 @@ class UserAccountUseCase: UseCase {
 // MARK: Dependencies extension
 
 extension UserAccountUseCase {
+    // Normally here we would have service dependency injection (like database etc..)
     struct Dependencies: DependencyConformance {
-
         static var live: Dependencies = .init(
         )
         

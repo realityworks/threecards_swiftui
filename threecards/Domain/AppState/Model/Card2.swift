@@ -7,9 +7,9 @@
 
 import Foundation
 
-struct Card2: CardDefinable {
+struct Card2: CardExpirable {
     var title: String
-    var color: String { "#00FF00" }
+    var color: CardColor { .green }
     var name: String
     var cardNumber: String
     var expiryDate: Date

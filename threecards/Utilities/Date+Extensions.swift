@@ -8,7 +8,11 @@
 import Foundation
 
 extension Date {
-    var expired: Bool {
+    public var expired: Bool {
         false
+    }
+
+    public init(fromNowDays days: Int) {
+        self.init(timeIntervalSinceNow: 60 * 60 * 24 * Double(days))
     }
 }
