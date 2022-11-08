@@ -15,7 +15,7 @@ struct MainView: View {
             VStack {
                 HStack {
                     Button("RESET") {
-                        //model.reset()
+                        model.resetList()
                     }
                     .frame(minWidth: 100)
                     .padding()
@@ -31,45 +31,29 @@ struct MainView: View {
                     .foregroundColor(.appForegroundBright)
                     .background(Color.appForegroundDark)
                     .cornerRadius(20)
-
                 }
 
                 List {
                     ForEach(model.cardData) { cardItem in
                         CardContainerView(card: cardItem.cardDefinition)
-                            .sheet(item: $model.selectedCard) { detail in
-                                Self.viewFor(definable: detail.cardDefinition)
-                            }
                             .listRowBackground(Color.clear)
                             .onTapGesture {
                                 model.cardWasSelected(cardItem)
                             }
                     }
                     .onDelete { indexSet in
-                        //model.delete(at: indexSet)
+                        model.delete(at: indexSet)
                     }
                     .onMove { source, destination in
-                        //model.move(from: source, to: destination)
+                        model.move(from: source, to: destination)
                     }
                 }
                 .listStyle(.plain)
                 .environment(\.editMode, .constant(model.editEnabled ? .active : .inactive))
             }
             .padding(.top, 8)
-        }
-    }
-
-    static func viewFor(definable: any CardDefinable) -> some View {
-        Group {
-            switch definable.self {
-            case let card1 as Card1Model:
-                Card1View(cardData: card1)
-            case let card2 as Card2Model:
-                Card2View(cardData: card2)
-            case let card3 as Card3Model:
-                Card3View(cardData: card3)
-            default:
-                EmptyView()
+            .sheet(item: $model.selectedCard) { cardItem in
+                CardSheetContainerView(cardItem: cardItem)
             }
         }
     }

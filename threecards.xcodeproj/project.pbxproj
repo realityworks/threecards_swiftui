@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1D09B941291B03480070A38F /* CardSheetContainerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D09B940291B03480070A38F /* CardSheetContainerView.swift */; };
 		1D3795EC2918C6F40056E602 /* threecardsApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D3795EB2918C6F40056E602 /* threecardsApp.swift */; };
 		1D3795EE2918C6F40056E602 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D3795ED2918C6F40056E602 /* MainView.swift */; };
 		1D3795F02918C6F50056E602 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1D3795EF2918C6F50056E602 /* Assets.xcassets */; };
@@ -69,6 +70,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1D09B940291B03480070A38F /* CardSheetContainerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardSheetContainerView.swift; sourceTree = "<group>"; };
 		1D3795E82918C6F40056E602 /* threecards.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = threecards.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1D3795EB2918C6F40056E602 /* threecardsApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = threecardsApp.swift; sourceTree = "<group>"; };
 		1D3795ED2918C6F40056E602 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
@@ -257,6 +259,7 @@
 				1D37966F2919E5E50056E602 /* Card2View.swift */,
 				1D3796712919E5EF0056E602 /* Card3View.swift */,
 				1D9360442919FAAD00EF92B9 /* CardViewHeader.swift */,
+				1D09B940291B03480070A38F /* CardSheetContainerView.swift */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -483,6 +486,7 @@
 				1D37963A2918D2F50056E602 /* DependencyConformance.swift in Sources */,
 				1D3796222918CC040056E602 /* UseCase.swift in Sources */,
 				1D3796332918CD980056E602 /* UseCaseState.swift in Sources */,
+				1D09B941291B03480070A38F /* CardSheetContainerView.swift in Sources */,
 				1D3796232918CC040056E602 /* UseCases.swift in Sources */,
 				1D37966C2919DED90056E602 /* Color+Extensions.swift in Sources */,
 				1D37962C2918CD120056E602 /* AppStateController.swift in Sources */,

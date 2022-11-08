@@ -32,16 +32,31 @@ class UserAccountUseCase: UseCase {
         state.selectedCard = nil
     }
 
-    func move(card: CardItem, toPositionInList position: Int) {
+    func move(from indexSet: IndexSet, to position: Int) {
+        guard indexSet.allSatisfy({ $0 < state.cards.count}) else {
+            internalError(with: "An item in the index set is out of range")
+            return
+        }
 
+        guard position < state.cards.count else {
+            internalError(with: "Offset position is out of range")
+            return
+        }
+
+        state.cards.move(fromOffsets: indexSet, toOffset: position)
     }
 
-    func remove(card: CardItem) {
+    func remove(cardAtPosition position: Int) {
+        guard position < state.cards.count else {
+            internalError(with: "Internal: Invalid position to delete card \(position)")
+            return
+        }
 
+        state.cards.remove(at: position)
     }
 
     func resetList() {
-        
+        state.cards = state.originalCards
     }
 }
 

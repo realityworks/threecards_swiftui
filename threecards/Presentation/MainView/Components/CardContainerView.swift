@@ -8,9 +8,14 @@
 import SwiftUI
 
 struct CardContainerView: View {
+    // Model
     var card: any CardDefinable
 
+    // Environment
     @Environment(\.verticalSizeClass) var verticalSizeClass
+
+    // Animation
+    @State private var show = false
 
     var body: some View {
         VStack {
@@ -45,8 +50,19 @@ struct CardContainerView: View {
             RoundedRectangle(cornerRadius: 20)
                 .stroke(
                     isExpired ? .red : Color.appForegroundDark,
-                    lineWidth: isExpired ? 5 : 1)
+                    lineWidth: isExpired ? 5 : 1
+                )
+                .scaleEffect(show ? 1 : isExpired ? 1.01 : 1)
+                .opacity(show ? 1 : isExpired ? 0 : 1)
+                .animation(
+                    .easeOut(duration: 0.5)
+                        .repeatForever(),
+                    value: show
+                )
         )
+        .onAppear {
+            show.toggle()
+        }
     }
 
     var isExpired: Bool {

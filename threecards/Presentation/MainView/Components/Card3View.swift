@@ -8,29 +8,29 @@
 import SwiftUI
 
 struct Card3View: View {
+    // Model
     var cardData: Card3Model
+
     var body: some View {
-        ScrollView {
-            VStack(spacing: 20) {
-                CardViewHeader(
-                    title: cardData.title,
-                    color: cardData.color.swiftUIColor
-                )
-                .frame(minHeight: 150)
+        VStack(spacing: 20) {
+            CardViewHeader(
+                title: cardData.title,
+                color: cardData.color.swiftUIColor
+            )
+            .frame(minHeight: 150)
 
-                Text(cardData.firstName + " " + cardData.lastName)
-                    .font(.headline)
-                Text("Reference: " + cardData.referenceNumber)
-                    .font(.headline)
-                Text("Expiry: " + cardData.expiryDate.formatted())
-                    .font(.subheadline)
+            Text(cardData.firstName + " " + cardData.lastName)
+                .font(.headline)
+            Text("Reference: " + cardData.referenceNumber)
+                .font(.headline)
+            Text("Expiry: " + cardData.expiryDate.formatted())
+                .font(.subheadline)
 
-                Spacer()
-                QRCodeView(dataString: cardData.dataString)
-                Text(cardData.cardId.uuidString)
-                    .font(.caption)
-                Spacer()
-            }
+            Spacer()
+            QRCodeView(dataString: cardData.dataString)
+            Text(cardData.cardId.uuidString)
+                .font(.caption)
+            Spacer()
         }
     }
 }

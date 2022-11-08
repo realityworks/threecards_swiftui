@@ -9,10 +9,6 @@ import Foundation
 
 struct CardItem: Identifiable {
     var id: Int
-    var originalPosition: Int {
-        id
-    }
-
     var cardDefinition: any CardDefinable
 }
 

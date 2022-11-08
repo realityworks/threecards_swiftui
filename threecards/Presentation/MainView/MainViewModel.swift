@@ -43,6 +43,23 @@ class MainViewModel: ObservableObject {
     func toggleEdit() {
         editEnabled.toggle()
     }
+
+    func delete(at indexSet: IndexSet) {
+        guard let deleteIndex = indexSet.first else {
+            userAccountUseCase.internalError(with: "Internal: Cannot delete index: \(indexSet)")
+            return
+        }
+
+        userAccountUseCase.remove(cardAtPosition: deleteIndex)
+    }
+
+    func move(from indexSet: IndexSet, to position: Int) {
+        userAccountUseCase.move(from: indexSet, to: position)
+    }
+
+    func resetList() {
+        userAccountUseCase.resetList()
+    }
 }
 
 
