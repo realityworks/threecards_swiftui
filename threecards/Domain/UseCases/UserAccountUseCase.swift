@@ -38,7 +38,7 @@ class UserAccountUseCase: UseCase {
             return
         }
 
-        guard position < state.cards.count else {
+        guard position <= state.cards.count else {
             internalError(with: "Offset position is out of range")
             return
         }
