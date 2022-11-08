@@ -30,6 +30,7 @@ struct CardContainerView: View {
                     Circle()
                         .foregroundColor(card.color.swiftUIColor)
                         .shadow(radius: 10)
+
                     Text("TAP")
                         .font(verticalSizeClass == .regular ? .title3 : .title2 )
                         .foregroundColor(.appForegroundBright)
@@ -42,8 +43,19 @@ struct CardContainerView: View {
         .padding()
         .overlay(
             RoundedRectangle(cornerRadius: 20)
-                .stroke(Color.appForegroundDark, lineWidth: 1)
+                .stroke(
+                    isExpired ? .red : Color.appForegroundDark,
+                    lineWidth: isExpired ? 5 : 1)
         )
+    }
+
+    var isExpired: Bool {
+        if let expirableCard = card as? any CardExpirable,
+           expirableCard.expired {
+            return true
+        }
+
+        return false
     }
 }
 

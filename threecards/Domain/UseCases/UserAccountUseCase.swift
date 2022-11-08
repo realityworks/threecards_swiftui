@@ -20,7 +20,7 @@ class UserAccountUseCase: UseCase {
     func select(_ card: CardItem) {
         if let expiredCard = card.cardDefinition as? any CardExpirable {
             guard !expiredCard.expired else {
-                internalError(with: "Card is expired!")
+                internalError(with: DomainError(with: "Card is expired!!"))
                 return
             }
         }
