@@ -1,6 +1,6 @@
 //
 //  UserInterfaceStandards.swift
-//  intelli-iq-app-ios
+//  threecards
 //
 //  Created by Piotr Suwara on 18/8/2022.
 //
