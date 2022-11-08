@@ -9,7 +9,7 @@ import Foundation
 
 extension Date {
     public var expired: Bool {
-        false
+        return self < .now 
     }
 
     public init(fromNowDays days: Int) {

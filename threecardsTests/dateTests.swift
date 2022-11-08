@@ -24,7 +24,10 @@ final class dateTests: XCTestCase {
         // Mark your test throws to produce an unexpected failure when your test encounters an uncaught error.
         // Mark your test async to allow awaiting for asynchronous code to complete. Check the results with assertions afterwards.
         // Ten days in the future
-        let dateNotExpired = Date(timeIntervalSinceNow: 60 * 60 * 24 * 10)
+        let dateNotExpired = Date(fromNowDays: 5)
         XCTAssertTrue(dateNotExpired.expired == false)
+
+        let dateExpired = Date(fromNowDays: -5)
+        XCTAssertTrue(dateExpired.expired == true)
     }
 }

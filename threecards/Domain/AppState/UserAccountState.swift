@@ -8,17 +8,24 @@
 import Foundation
 
 struct UserAccountState: UseCaseState {
-    var cards: [CardItem] = [
+
+    init() {
+        self.cards = originalCards
+    }
+
+    var selectedCard: CardItem? = nil
+    var cards: [CardItem] = []
+    let originalCards: [CardItem] = [
         CardItem(
             id: 0,
-            cardDefinition: Card1(
+            cardDefinition: Card1Model(
                 title: "First Card",
                 name: "David Hasselhof"
             )
         ),
         CardItem(
             id: 1,
-            cardDefinition: Card2(
+            cardDefinition: Card2Model(
                 title: "Second Card",
                 name: "Bab Sagett",
                 cardNumber: "123123231",
@@ -27,7 +34,7 @@ struct UserAccountState: UseCaseState {
         ),
         CardItem(
             id: 2,
-            cardDefinition: Card2(
+            cardDefinition: Card2Model(
                 title: "Third Card",
                 name: "Mark Bronson",
                 cardNumber: "232123221",
@@ -36,7 +43,7 @@ struct UserAccountState: UseCaseState {
         ),
         CardItem(
             id: 3,
-            cardDefinition: Card2(
+            cardDefinition: Card2Model(
                 title: "Another Card",
                 name: "Mark Bronson",
                 cardNumber: "4232123",
@@ -45,21 +52,21 @@ struct UserAccountState: UseCaseState {
         ),
         CardItem(
             id: 4,
-            cardDefinition: Card1(
+            cardDefinition: Card1Model(
                 title: "One Card",
                 name: "Steven bobs"
             )
         ),
         CardItem(
             id: 5,
-            cardDefinition: Card1(
+            cardDefinition: Card1Model(
                 title: "Card type 1",
                 name: "BlinkenBlob"
             )
         ),
         CardItem(
             id: 6,
-            cardDefinition: Card3(
+            cardDefinition: Card3Model(
                 title: "Wow Card Type 3",
                 firstName: "Geoff",
                 lastName: "Bloom",
@@ -70,7 +77,7 @@ struct UserAccountState: UseCaseState {
         ),
         CardItem(
             id: 7,
-            cardDefinition: Card2(
+            cardDefinition: Card2Model(
                 title: "This is a card",
                 name: "StackOverflow",
                 cardNumber: "123199888",
@@ -79,7 +86,7 @@ struct UserAccountState: UseCaseState {
         ),
         CardItem(
             id: 8,
-            cardDefinition: Card2(
+            cardDefinition: Card2Model(
                 title: "Not another card",
                 name: "What's in a name?",
                 cardNumber: "12322211",
@@ -88,7 +95,7 @@ struct UserAccountState: UseCaseState {
         ),
         CardItem(
             id: 9,
-            cardDefinition: Card3(
+            cardDefinition: Card3Model(
                 title: "LastCard?",
                 firstName: "Pretzel",
                 lastName: "Polak",

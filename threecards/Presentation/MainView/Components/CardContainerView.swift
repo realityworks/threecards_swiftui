@@ -29,6 +29,7 @@ struct CardContainerView: View {
                 ZStack {
                     Circle()
                         .foregroundColor(card.color.swiftUIColor)
+                        .shadow(radius: 10)
                     Text("TAP")
                         .font(verticalSizeClass == .regular ? .title3 : .title2 )
                         .foregroundColor(.appForegroundBright)
@@ -38,18 +39,23 @@ struct CardContainerView: View {
             .padding(.horizontal, 4)
         }
         .background(Color.appBackground)
+        .padding()
+        .overlay(
+            RoundedRectangle(cornerRadius: 20)
+                .stroke(Color.appForegroundDark, lineWidth: 1)
+        )
     }
 }
 
 struct CardContainerView_Previews: PreviewProvider {
     static var previews: some View {
         CardContainerView(
-            card: Card1(
+            card: Card1Model(
                 title: "Test Card 1",
                 name: "Name Test")
         )
         CardContainerView(
-            card: Card2(
+            card: Card2Model(
                 title: "Test Card 2",
                 name: "Name Test",
                 cardNumber: "123123123",
@@ -57,7 +63,7 @@ struct CardContainerView_Previews: PreviewProvider {
             )
         )
         CardContainerView(
-            card: Card3(
+            card: Card3Model(
                 title: "Test Card 3",
                 firstName: "Peter",
                 lastName: "Suwara",

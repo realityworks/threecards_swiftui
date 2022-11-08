@@ -36,9 +36,9 @@
 		1D37964B2918D6DA0056E602 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D37964A2918D6DA0056E602 /* Constants.swift */; };
 		1D37965129199EFD0056E602 /* CardItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D37965029199EFD0056E602 /* CardItem.swift */; };
 		1D3796552919A8110056E602 /* CardDefinable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D3796542919A8110056E602 /* CardDefinable.swift */; };
-		1D3796572919A8330056E602 /* Card1.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D3796562919A8330056E602 /* Card1.swift */; };
-		1D3796592919A83A0056E602 /* Card2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D3796582919A83A0056E602 /* Card2.swift */; };
-		1D37965B2919A8410056E602 /* Card3.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D37965A2919A8410056E602 /* Card3.swift */; };
+		1D3796572919A8330056E602 /* Card1Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D3796562919A8330056E602 /* Card1Model.swift */; };
+		1D3796592919A83A0056E602 /* Card2Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D3796582919A83A0056E602 /* Card2Model.swift */; };
+		1D37965B2919A8410056E602 /* Card3Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D37965A2919A8410056E602 /* Card3Model.swift */; };
 		1D37965D2919A88B0056E602 /* dateTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D37965C2919A88B0056E602 /* dateTests.swift */; };
 		1D3796632919A9EF0056E602 /* Date+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D3796622919A9EF0056E602 /* Date+Extensions.swift */; };
 		1D3796652919BBD00056E602 /* CardExpirable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D3796642919BBD00056E602 /* CardExpirable.swift */; };
@@ -47,6 +47,8 @@
 		1D37966E2919E5DD0056E602 /* Card1View.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D37966D2919E5DD0056E602 /* Card1View.swift */; };
 		1D3796702919E5E50056E602 /* Card2View.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D37966F2919E5E50056E602 /* Card2View.swift */; };
 		1D3796722919E5EF0056E602 /* Card3View.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D3796712919E5EF0056E602 /* Card3View.swift */; };
+		1D9360432919F4C200EF92B9 /* QRCodeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D9360422919F4C200EF92B9 /* QRCodeView.swift */; };
+		1D9360452919FAAD00EF92B9 /* CardViewHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D9360442919FAAD00EF92B9 /* CardViewHeader.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -99,9 +101,9 @@
 		1D37964A2918D6DA0056E602 /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		1D37965029199EFD0056E602 /* CardItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardItem.swift; sourceTree = "<group>"; };
 		1D3796542919A8110056E602 /* CardDefinable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardDefinable.swift; sourceTree = "<group>"; };
-		1D3796562919A8330056E602 /* Card1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Card1.swift; sourceTree = "<group>"; };
-		1D3796582919A83A0056E602 /* Card2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Card2.swift; sourceTree = "<group>"; };
-		1D37965A2919A8410056E602 /* Card3.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Card3.swift; sourceTree = "<group>"; };
+		1D3796562919A8330056E602 /* Card1Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Card1Model.swift; sourceTree = "<group>"; };
+		1D3796582919A83A0056E602 /* Card2Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Card2Model.swift; sourceTree = "<group>"; };
+		1D37965A2919A8410056E602 /* Card3Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Card3Model.swift; sourceTree = "<group>"; };
 		1D37965C2919A88B0056E602 /* dateTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = dateTests.swift; sourceTree = "<group>"; };
 		1D3796622919A9EF0056E602 /* Date+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Date+Extensions.swift"; sourceTree = "<group>"; };
 		1D3796642919BBD00056E602 /* CardExpirable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardExpirable.swift; sourceTree = "<group>"; };
@@ -110,6 +112,8 @@
 		1D37966D2919E5DD0056E602 /* Card1View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Card1View.swift; sourceTree = "<group>"; };
 		1D37966F2919E5E50056E602 /* Card2View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Card2View.swift; sourceTree = "<group>"; };
 		1D3796712919E5EF0056E602 /* Card3View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Card3View.swift; sourceTree = "<group>"; };
+		1D9360422919F4C200EF92B9 /* QRCodeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QRCodeView.swift; sourceTree = "<group>"; };
+		1D9360442919FAAD00EF92B9 /* CardViewHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardViewHeader.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -240,6 +244,7 @@
 			isa = PBXGroup;
 			children = (
 				1D3796402918D5FF0056E602 /* Alerts */,
+				1D9360422919F4C200EF92B9 /* QRCodeView.swift */,
 			);
 			path = SharedComponents;
 			sourceTree = "<group>";
@@ -251,6 +256,7 @@
 				1D37966D2919E5DD0056E602 /* Card1View.swift */,
 				1D37966F2919E5E50056E602 /* Card2View.swift */,
 				1D3796712919E5EF0056E602 /* Card3View.swift */,
+				1D9360442919FAAD00EF92B9 /* CardViewHeader.swift */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -284,9 +290,9 @@
 				1D37965029199EFD0056E602 /* CardItem.swift */,
 				1D3796542919A8110056E602 /* CardDefinable.swift */,
 				1D3796642919BBD00056E602 /* CardExpirable.swift */,
-				1D3796562919A8330056E602 /* Card1.swift */,
-				1D3796582919A83A0056E602 /* Card2.swift */,
-				1D37965A2919A8410056E602 /* Card3.swift */,
+				1D3796562919A8330056E602 /* Card1Model.swift */,
+				1D3796582919A83A0056E602 /* Card2Model.swift */,
+				1D37965A2919A8410056E602 /* Card3Model.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -471,6 +477,7 @@
 			files = (
 				1D3796442918D5FF0056E602 /* AlertOverlayManager.swift in Sources */,
 				1D3796272918CC2A0056E602 /* UserAccountUseCase.swift in Sources */,
+				1D9360452919FAAD00EF92B9 /* CardViewHeader.swift in Sources */,
 				1D3796252918CC210056E602 /* UseCaseContainer.swift in Sources */,
 				1D3796452918D5FF0056E602 /* AlertOverlay.swift in Sources */,
 				1D37963A2918D2F50056E602 /* DependencyConformance.swift in Sources */,
@@ -481,6 +488,7 @@
 				1D37962C2918CD120056E602 /* AppStateController.swift in Sources */,
 				1D3796692919D29C0056E602 /* SafePublisher.swift in Sources */,
 				1D3796552919A8110056E602 /* CardDefinable.swift in Sources */,
+				1D9360432919F4C200EF92B9 /* QRCodeView.swift in Sources */,
 				1D3796652919BBD00056E602 /* CardExpirable.swift in Sources */,
 				1D3795EE2918C6F40056E602 /* MainView.swift in Sources */,
 				1D3796462918D5FF0056E602 /* AlertState.swift in Sources */,
@@ -489,17 +497,17 @@
 				1D3796372918D2980056E602 /* MainViewModel.swift in Sources */,
 				1D3796702919E5E50056E602 /* Card2View.swift in Sources */,
 				1D37963C2918D3640056E602 /* String+Error.swift in Sources */,
-				1D37965B2919A8410056E602 /* Card3.swift in Sources */,
+				1D37965B2919A8410056E602 /* Card3Model.swift in Sources */,
 				1D3796352918CE340056E602 /* CardContainerView.swift in Sources */,
 				1D3796632919A9EF0056E602 /* Date+Extensions.swift in Sources */,
 				1D37962D2918CD120056E602 /* AppState.swift in Sources */,
 				1D37966E2919E5DD0056E602 /* Card1View.swift in Sources */,
-				1D3796572919A8330056E602 /* Card1.swift in Sources */,
+				1D3796572919A8330056E602 /* Card1Model.swift in Sources */,
 				1D37965129199EFD0056E602 /* CardItem.swift in Sources */,
 				1D3796482918D6CA0056E602 /* UserInterfaceStandards.swift in Sources */,
 				1D3796312918CD770056E602 /* UserAccountState.swift in Sources */,
 				1D3795EC2918C6F40056E602 /* threecardsApp.swift in Sources */,
-				1D3796592919A83A0056E602 /* Card2.swift in Sources */,
+				1D3796592919A83A0056E602 /* Card2Model.swift in Sources */,
 				1D37961E2918C97B0056E602 /* DomainError.swift in Sources */,
 				1D37961D2918C97B0056E602 /* Domain.swift in Sources */,
 			);

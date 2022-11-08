@@ -11,30 +11,46 @@ struct MainView: View {
     @ObservedObject var model: MainViewModel = .init()
     
     var body: some View {
-        List {
-            ForEach(model.cardData) { cardData in
-                CardContainerView(card: cardData.cardDefinition)
-                    .sheet(item: $model.selectedCard) { detail in
-                        
+        AlertOverlay(model.errorAlertManager) {
+            VStack {
+                Button("RESET") {
+                    //model.reset()
+                }
+                .padding()
+                .foregroundColor(.appForegroundBright)
+                .background(Color.appForegroundDark)
+                .cornerRadius(20)
+
+                List {
+                    ForEach(model.cardData) { cardItem in
+                        CardContainerView(card: cardItem.cardDefinition)
+                            .sheet(item: $model.selectedCard) { detail in
+                                Self.viewFor(definable: detail.cardDefinition)
+                            }
+                            .listRowBackground(Color.clear)
+                            .onTapGesture {
+                                model.cardWasSelected(cardItem)
+                            }
                     }
-                    .listRowBackground(Color.clear)
-                    .onTapGesture {
-                        model.cardWasSelected()
+                    .onDelete { indexSet in
+                        model.delete(at: indexSet)
                     }
+                }
+                .listStyle(.plain)
             }
+            .padding(.top, 8)
         }
-        .listStyle(.plain)
     }
 
     static func viewFor(definable: any CardDefinable) -> some View {
         Group {
             switch definable.self {
-            case let card1 as Card1:
+            case let card1 as Card1Model:
                 Card1View(cardData: card1)
-            case let card2 as Card2:
-                EmptyView()
-            case let card3 as Card3:
-                EmptyView()
+            case let card2 as Card2Model:
+                Card2View(cardData: card2)
+            case let card3 as Card3Model:
+                Card3View(cardData: card3)
             default:
                 EmptyView()
             }

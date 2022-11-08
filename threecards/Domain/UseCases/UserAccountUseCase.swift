@@ -17,6 +17,21 @@ class UserAccountUseCase: UseCase {
         
     }
 
+    func select(_ card: CardItem) {
+        if let expiredCard = card.cardDefinition as? any CardExpirable {
+            guard !expiredCard.expired else {
+                internalError(with: "Card is expired!")
+                return
+            }
+        }
+        
+        state.selectedCard = card
+    }
+
+    func deselectCard() {
+        state.selectedCard = nil
+    }
+
     func move(card: CardItem, toPositionInList position: Int) {
 
     }

@@ -8,14 +8,26 @@
 import SwiftUI
 
 struct Card1View: View {
-    var cardData: Card1
+    var cardData: Card1Model
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        VStack(spacing: 20) {
+            CardViewHeader(
+                title: cardData.title,
+                color: cardData.color.swiftUIColor
+            )
+
+            Text(cardData.name)
+                .font(.headline)
+
+            Spacer()
+            QRCodeView(dataString: cardData.dataString)
+            Spacer()
+        }
     }
 }
 
 struct Card1View_Previews: PreviewProvider {
     static var previews: some View {
-        Card1View(cardData: Card1(title: "TestTitle", name: "This is my name"))
+        Card1View(cardData: Card1Model(title: "TestTitle", name: "This is my name"))
     }
 }
