@@ -17,10 +17,11 @@ struct CardSheetContainerView: View {
     var body: some View {
         ScrollView {
             Self.viewFor(definable: cardItem.cardDefinition)
+                .padding(.top, 24)
         }
-        .padding(.top, show ? 0 : 64)
+        .offset(y: show ? 8 : 1024)
         .animation(
-            .spring(dampingFraction: 0.4),
+            .spring(response: 1.0, dampingFraction: 0.8),
             value: show
         )
         .onAppear {

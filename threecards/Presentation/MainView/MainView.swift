@@ -23,7 +23,7 @@ struct MainView: View {
                     .background(Color.appForegroundDark)
                     .cornerRadius(20)
 
-                    Button("EDIT") {
+                    Button(model.editEnabled ? "FINISH" : "EDIT") {
                         model.toggleEdit()
                     }
                     .frame(minWidth: 100)
