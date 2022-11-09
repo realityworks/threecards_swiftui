@@ -52,7 +52,9 @@ struct MainView: View {
                 .environment(\.editMode, .constant(model.editEnabled ? .active : .inactive))
             }
             .padding(.top, 8)
-            .sheet(item: $model.selectedCard) { cardItem in
+            .sheet(item: $model.selectedCard, onDismiss: {
+                model.deselectCard()
+            }) { cardItem in
                 CardSheetContainerView(cardItem: cardItem)
             }
         }

@@ -60,6 +60,10 @@ class MainViewModel: ObservableObject {
     func resetList() {
         userAccountUseCase.resetList()
     }
+
+    func deselectCard() {
+        userAccountUseCase.deselectCard()
+    }
 }
 
 
